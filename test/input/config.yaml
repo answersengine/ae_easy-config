@@ -1,0 +1,13 @@
+my_config:
+  sublevel:
+    collection:
+      - item_a: 'A'
+        aaa: '111'
+      - item_b: B
+        bbb: '222'
+      - item_c: 'C'
+        ccc: 333
+    hash:
+      ddd: 444
+      eee: 'EEE'
+  value_f: 'fff'
