@@ -11,6 +11,6 @@ Install gem:
 ```gem install 'ae_easy-config'```
 
 Require gem:
-```require 'ae_easy-config'```
+```require 'ae_easy/config'```
 
 Documentation can be found [here](http://rubydoc.org/gems/ae_easy-config/frames).
