@@ -1,17 +1,16 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "ae_easy/config/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "ae_easy-config"
-  spec.version       = AeEasy::Config::VERSION
+  spec.version       = "0.0.3"
   spec.authors       = ["Eduardo Rosales"]
   spec.email         = ["eduardo@datahen.com"]
 
-  spec.summary       = %q{AnswersEngine Easy toolkit config module}
-  spec.description   = %q{AnswersEngine Easy toolkit config module allow an easy configuration from files for advance features.}
-  spec.homepage      = "https://answersengine.com"
+  spec.summary       = %q{(Deprecated: Use dh_easy-config gem instead.) Compatibility alias for DataHen Easy toolkit config module}
+  spec.description   = %q{(Deprecated: Use dh_easy-config gem instead.) Compatibility alias for DataHen Easy toolkit config module allow an easy configuration from files for advance features.}
+  spec.homepage      = "https://datahen.com"
   spec.license       = "MIT"
 
   # spec.cert_chain  = ['certs/ae_easy.pem']
@@ -38,12 +37,10 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
   spec.required_ruby_version = '>= 2.2.2'
 
-  spec.add_dependency 'ae_easy-core', '~> 0'
+  spec.add_dependency 'dh_easy-config', '>= 0'
+  spec.add_dependency 'ae_easy-core', '>= 0.2.1'
   spec.add_development_dependency 'bundler', '>= 1'
   spec.add_development_dependency 'rake', '~> 10'
   spec.add_development_dependency 'minitest', '~> 5'
-  spec.add_development_dependency 'simplecov', '~> 0'
-  spec.add_development_dependency 'simplecov-console', '~> 0'
-  spec.add_development_dependency 'timecop', '~> 0'
   spec.add_development_dependency 'byebug', '>= 0'
 end

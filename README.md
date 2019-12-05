@@ -5,12 +5,16 @@
 # AeEasy config module
 ## Description
 
-AeEasy config is part of AeEasy gem collection. It provides configuration from files for an easy way to manage configuration on advance features.
+AeEasy config is part of AeEasy gem collection and an alias to [dh_easy-config](https://github.com/DataHenOfficial/dh_easy-config/) gem. It provides configuration from files for an easy way to manage configuration on advance features.
 
 Install gem:
-```gem install 'ae_easy-config'```
+```ruby
+gem install 'ae_easy-config'
+```
 
 Require gem:
-```require 'ae_easy/config'```
+```ruby
+require 'ae_easy/config'
+```
 
-Documentation can be found [here](http://rubydoc.org/gems/ae_easy-config/frames).
+See [dh_easy-config](https://github.com/DataHenOfficial/dh_easy-config/) gem for documentation.

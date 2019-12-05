@@ -1,9 +1,8 @@
-require 'yaml'
+require 'dh_easy/config'
 require 'ae_easy/core'
-require 'ae_easy/config/version'
-require 'ae_easy/config/local'
 
-module AeEasy
-  module Config
-  end
-end
+DhEasy::Config::Local.default_file_path_list << 'ae_easy.yaml'
+DhEasy::Config::Local.default_file_path_list << 'ae_easy.yml'
+
+# (Deprecated) Alias to DhEasy module.
+AeEasy = ::DhEasy unless defined? ::AeEasy
